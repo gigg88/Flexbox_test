@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    gap: 2rem;
+    height: 500px;
+    border: 2px solid yellow;
+}
+
+.container1,
+.container2 {
+    width: 100px;
+    height: 100px;
+    flex-basis: 50%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.container1 {
+    background-color: green;
+}
+
+.container2 {
+    background-color: red;
+}
+
+.header {
+    width: 100%;
+    background-color: blue;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+        height: 1000px;
+        
+        
+    }
+
+    .container1,
+    .container2 {
+        flex-basis:100%;
+        height:auto; 
+    }
+
+    .header{
+        max-height:100px;
+    }
+}
+
+
